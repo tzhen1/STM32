@@ -1,0 +1,10 @@
+09:17:21 **** Incremental Build of configuration Debug for project ADC_SingleConv ****
+make -j4 all 
+arm-none-eabi-size   ADC_SingleConv.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8120	     20	   1644	   9784	   2638	ADC_SingleConv.elf
+Finished building: default.size.stdout
+ 
+
+09:17:22 Build Finished. 0 errors, 0 warnings. (took 424ms)
+

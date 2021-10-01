@@ -1,0 +1,10 @@
+13:39:20 **** Incremental Build of configuration Debug for project ADC_Scan ****
+make -j4 all 
+arm-none-eabi-size   ADC_Scan.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36160	    152	   3776	  40088	   9c98	ADC_Scan.elf
+Finished building: default.size.stdout
+ 
+
+13:39:21 Build Finished. 0 errors, 0 warnings. (took 560ms)
+

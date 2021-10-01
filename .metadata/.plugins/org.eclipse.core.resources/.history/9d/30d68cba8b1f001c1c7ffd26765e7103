@@ -1,0 +1,42 @@
+#include "stm32f4xx_hal.h"
+
+//config functions using the driver's documentation
+void GPIO_Config(void); //for the 3 potentiometer pins
+void ADC_Config(void);
+
+
+int main(void)
+{
+
+	while(1)
+	{
+
+
+	}
+}
+
+
+
+void GPIO_Config(void)
+{
+	//enable port A clk,
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+
+	//config struct gpio type def
+	GPIO_InitTypeDef myPinsInit;
+	myPinsInit.Pin = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2; //PA0,PA1,PA2
+	myPinsInit.Mode = GPIO_MODE_ANALOG; //3 analog i/p
+	myPinsInit.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(GPIOA, &myPinsInit);
+
+}
+
+void ADC_Config(void)
+{
+	//Enable ADC1 clock
+	__HAL_RCC_ADC1_CLK_ENABLE();
+
+
+}
+
+

@@ -1,0 +1,27 @@
+data='[ \
+	{ \
+		"image": "news/Hierarchical.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/AzureRTOS.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/ToolchainManager.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/LinuxUserspace.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/SWVEnhancements.png", \
+		"link": "", \
+		"caption": "" \
+	} \
+]';

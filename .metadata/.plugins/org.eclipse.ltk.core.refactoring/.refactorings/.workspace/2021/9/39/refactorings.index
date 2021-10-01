@@ -1,0 +1,7 @@
+1632383164698	Delete resource 'ADC_SingleCovHAL'
+1632383240985	Delete resource 'ADC_SingleCovHAL/ADC_SingleCovHAL.ioc'
+1632389602042	Delete resource 'ADC_SingleCovHAL/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c'
+1632389605902	Delete resource 'ADC_SingleCovHAL/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c'
+1632389609912	Delete resource 'ADC_SingleCovHAL/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h'
+1632389613572	Delete resource 'ADC_SingleCovHAL/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.c'
+1632389710928	Delete resource 'ADC_SingleCovHAL/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c'

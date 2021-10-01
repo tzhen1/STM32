@@ -1,0 +1,27 @@
+#include "stm32f4xx_hal.h"
+
+void ConfigLEDpins(void);
+
+int main(void)
+{
+	ConfigLEDpins();
+
+	while(1)
+	{
+
+
+	}
+}
+
+//check hal gpio lib
+void ConfigLEDpins(void)
+{
+	//LED Config
+	GPIO_InitTypeDef myLEDconfig;
+	myLEDconfig.Mode = GPIO_MODE_OUTPUT_PP; //output mode (push/pull)
+	myLEDconfig.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
+
+	//INIT
+	HAL_GPIO_Init(GPIOD, &myLEDconfig); //config as a pointer
+
+}

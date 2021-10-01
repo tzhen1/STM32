@@ -1,0 +1,10 @@
+14:47:56 **** Incremental Build of configuration Debug for project Tim_ADC_HAL ****
+make -j4 all 
+arm-none-eabi-size   Tim_ADC_HAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7380	     20	   1716	   9116	   239c	Tim_ADC_HAL.elf
+Finished building: default.size.stdout
+ 
+
+14:47:56 Build Finished. 0 errors, 0 warnings. (took 390ms)
+

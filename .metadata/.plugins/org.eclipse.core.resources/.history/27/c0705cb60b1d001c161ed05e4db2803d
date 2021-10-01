@@ -1,0 +1,24 @@
+#include "stm32f4xx_hal.h"
+
+void ConfigLEDpins(void);
+
+int main(void)
+{
+	ConfigLEDpins();
+
+	while(1)
+	{
+
+
+	}
+}
+
+//check hal gpio lib
+void ConfigLEDpins(void)
+{
+
+
+	//INIT
+
+
+}
