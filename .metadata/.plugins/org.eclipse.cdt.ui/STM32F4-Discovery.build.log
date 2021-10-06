@@ -1,0 +1,10 @@
+10:35:02 **** Incremental Build of configuration Debug for project STM32F4-Discovery ****
+make -j4 all 
+arm-none-eabi-size   STM32F4-Discovery.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4200	     48	   1568	   5816	   16b8	STM32F4-Discovery.elf
+Finished building: default.size.stdout
+ 
+
+10:35:02 Build Finished. 0 errors, 0 warnings. (took 381ms)
+

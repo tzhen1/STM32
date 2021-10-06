@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="tim1"/>
 			<item value="TIM1"/>
 			<item value="myDMA2_typeDef"/>
 			<item value="myDMA2_handle"/>
