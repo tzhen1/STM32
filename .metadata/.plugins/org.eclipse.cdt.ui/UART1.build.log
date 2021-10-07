@@ -1,20 +1,10 @@
-10:14:55 **** Incremental Build of configuration Debug for project UART1 ****
+13:26:38 **** Incremental Build of configuration Debug for project UART1 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc -o "UART1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Tom.Zhen\STM32CubeIDE\workspace_1.7.0\UART1\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: UART1.elf
- 
 arm-none-eabi-size   UART1.elf 
-arm-none-eabi-objdump -h -S  UART1.elf  > "UART1.list"
-arm-none-eabi-objcopy  -O binary  UART1.elf  "UART1.bin"
    text	   data	    bss	    dec	    hex	filename
-  11104	     20	   1764	  12888	   3258	UART1.elf
+  11004	     20	   1764	  12788	   31f4	UART1.elf
 Finished building: default.size.stdout
  
-Finished building: UART1.bin
- 
-Finished building: UART1.list
- 
 
-10:14:57 Build Finished. 0 errors, 0 warnings. (took 1s.620ms)
+13:26:39 Build Finished. 0 errors, 0 warnings. (took 449ms)
 

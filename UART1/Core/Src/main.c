@@ -58,7 +58,7 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-char rxData [30] ;
+char rxData [30] ; //global
 
 /* USER CODE END 0 */
 
@@ -97,7 +97,7 @@ int main(void)
   //rxData defined globally to be used inside the func
 
   //define recieve function at start
-  HAL_UART_Receive_DMA(&huart2, (uint8_t *)rxData, 10); //expects unsigned int ptr, recieve 10 bytes at a time
+  HAL_UART_Receive_DMA(&huart2, (uint8_t *)rxData, 10); //expects unsigned int ptr, get 10 bytes at a time
   //when recieved full 10 bytes, it will interrupt and jump into a callback func
 
   /* USER CODE END 2 */
@@ -110,8 +110,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	//send data
-	HAL_UART_Transmit(&huart2,(uint8_t*)txData, strlen(txData), 10); // typedef & global, unsigned int + length of data + timeout (10ms)
-	HAL_Delay(500); // the string transmitted every 500ms
+//	HAL_UART_Transmit(&huart2,(uint8_t*)txData, strlen(txData), 10); // typedef & global, unsigned int + length of data + timeout (10ms)
+//	HAL_Delay(500); // the string transmitted every 500ms
   }
   /* USER CODE END 3 */
 }
@@ -240,7 +240,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
            the HAL_UART_RxCpltCallback could be implemented in the user file
    */
 
-  //every time recieved 10 bytes, echo back to transmitter func (the rxData - recieved data)
+  //every time recieved 10 bytes data, echo back to terminal (the rxData - recieved data)
   HAL_UART_Transmit(&huart2,(uint8_t*)rxData, strlen(rxData), 10);
 
 

@@ -16,6 +16,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Tom.Zhen\Desktop\STM32Cube_FW_F4_V1.26.0\Projects\STM32F4-Discovery\Templates"/>
+			<item value="C:\Users\Tom.Zhen\Desktop\STM32Cube_FW_F4_V1.26.0\Projects\STM32F4-Discovery\Examples\GPIO\GPIO_EXTI"/>
+			<item value="C:\Users\Tom.Zhen\Desktop\STM32Cube_FW_F4_V1.26.0\Projects\STM32F4-Discovery\Examples\DAC\DAC_SignalsGeneration"/>
 			<item value="C:\Users\Tom.Zhen\STM32CubeIDE\workspace_1.7.0\ADC_SingleCovHAL1 - Copy"/>
 			<item value="C:\Users\Tom.Zhen\STM32CubeIDE\workspace_1.7.0"/>
 		</list>
