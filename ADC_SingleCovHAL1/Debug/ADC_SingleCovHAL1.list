@@ -247,7 +247,7 @@ void ADC_Config(void)
  80002a6:	2301      	movs	r3, #1
  80002a8:	613b      	str	r3, [r7, #16]
 
-
+	// INIT channel
 	HAL_ADC_ConfigChannel(&myADCtypeDef,&myADCchannelTypeDef);
  80002aa:	f107 0308 	add.w	r3, r7, #8
  80002ae:	4619      	mov	r1, r3

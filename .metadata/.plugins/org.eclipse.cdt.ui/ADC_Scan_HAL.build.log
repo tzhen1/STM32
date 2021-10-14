@@ -1,4 +1,4 @@
-13:40:11 **** Incremental Build of configuration Debug for project ADC_Scan_HAL ****
+11:55:35 **** Build of configuration Debug for project ADC_Scan_HAL ****
 make -j4 all 
 arm-none-eabi-gcc -o "ADC_Scan_HAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Tom.Zhen\STM32CubeIDE\workspace_1.7.0\ADC_Scan_HAL\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_Scan_HAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/stm32f4xx_hal_msp.o: in function `HAL_ADC_MspInit':
@@ -10,5 +10,5 @@ collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:69: ADC_Scan_HAL.elf] Error 1
 "make -j4 all" terminated with exit code 2. Build might be incomplete.
 
-13:40:12 Build Failed. 6 errors, 0 warnings. (took 1s.21ms)
+11:55:37 Build Failed. 6 errors, 0 warnings. (took 1s.630ms)
 

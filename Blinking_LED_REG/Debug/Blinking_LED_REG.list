@@ -93,16 +93,17 @@ int main(void)
 
 	while(1)
 	{
-		GPIOD->ODR ^= (0xFUL << 13); //ouput data reg, look at document
+		//output LED lights (toggles ON/OFF due to XOR with prev state)  if 0(OFF) XOR 1 = 1 (ON). If 1 XOR 1 = 0 (OFF)
+		GPIOD->ODR ^= (0xFUL << 12); //ouput data reg, look at document, 0xF = 1111, UL = unsigned long hexa
  80001d0:	4b05      	ldr	r3, [pc, #20]	; (80001e8 <main+0x20>)
  80001d2:	695b      	ldr	r3, [r3, #20]
  80001d4:	4a04      	ldr	r2, [pc, #16]	; (80001e8 <main+0x20>)
- 80001d6:	f483 33f0 	eor.w	r3, r3, #122880	; 0x1e000
+ 80001d6:	f483 4370 	eor.w	r3, r3, #61440	; 0xf000
  80001da:	6153      	str	r3, [r2, #20]
 		msDelay(1000);
  80001dc:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  80001e0:	f000 f822 	bl	8000228 <msDelay>
-		GPIOD->ODR ^= (0xFUL << 13); //ouput data reg, look at document
+		GPIOD->ODR ^= (0xFUL << 12); //ouput data reg, look at document, 0xF = 1111, UL = unsigned long hexa
  80001e4:	e7f4      	b.n	80001d0 <main+0x8>
  80001e6:	bf00      	nop
  80001e8:	40020c00 	.word	0x40020c00

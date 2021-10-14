@@ -1,4 +1,4 @@
-15:23:07 **** Incremental Build of configuration Debug for project PWM ****
+11:55:52 **** Build of configuration Debug for project PWM ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Tom.Zhen\STM32CubeIDE\workspace_1.7.0\PWM\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -8,7 +8,7 @@ arm-none-eabi-size   PWM.elf
 arm-none-eabi-objdump -h -S  PWM.elf  > "PWM.list"
 arm-none-eabi-objcopy  -O binary  PWM.elf  "PWM.bin"
    text	   data	    bss	    dec	    hex	filename
-   9532	     20	   1644	  11196	   2bbc	PWM.elf
+   9640	     20	   1644	  11304	   2c28	PWM.elf
 Finished building: default.size.stdout
  
 Finished building: PWM.bin
@@ -16,5 +16,5 @@ Finished building: PWM.bin
 Finished building: PWM.list
  
 
-15:23:09 Build Finished. 0 errors, 0 warnings. (took 1s.440ms)
+11:55:54 Build Finished. 0 errors, 0 warnings. (took 1s.830ms)
 

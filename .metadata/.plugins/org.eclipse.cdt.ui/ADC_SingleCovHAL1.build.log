@@ -1,10 +1,20 @@
-08:15:49 **** Incremental Build of configuration Debug for project ADC_SingleCovHAL1 ****
+11:55:41 **** Build of configuration Debug for project ADC_SingleCovHAL1 ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ADC_SingleCovHAL1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Tom.Zhen\STM32CubeIDE\workspace_1.7.0\ADC_SingleCovHAL1\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_SingleCovHAL1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_SingleCovHAL1.elf
+ 
 arm-none-eabi-size   ADC_SingleCovHAL1.elf 
+arm-none-eabi-objdump -h -S  ADC_SingleCovHAL1.elf  > "ADC_SingleCovHAL1.list"
+arm-none-eabi-objcopy  -O binary  ADC_SingleCovHAL1.elf  "ADC_SingleCovHAL1.bin"
    text	   data	    bss	    dec	    hex	filename
    5092	     20	   1644	   6756	   1a64	ADC_SingleCovHAL1.elf
 Finished building: default.size.stdout
  
+Finished building: ADC_SingleCovHAL1.bin
+Finished building: ADC_SingleCovHAL1.list
+ 
+ 
 
-08:15:49 Build Finished. 0 errors, 0 warnings. (took 380ms)
+11:55:43 Build Finished. 0 errors, 0 warnings. (took 2s.230ms)
 

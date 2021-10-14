@@ -362,13 +362,13 @@ void TIM_Config(void)
  8000388:	4b12      	ldr	r3, [pc, #72]	; (80003d4 <TIM_Config+0x7c>)
  800038a:	2200      	movs	r2, #0
  800038c:	609a      	str	r2, [r3, #8]
-	myTimerHandle.Init.Period = 100 - 1; // -1 due to 0 being the start ,still just 16000
+	myTimerHandle.Init.Period = 16000 - 1; // -1 due to 0 being the start ,still just 16000
  800038e:	4b11      	ldr	r3, [pc, #68]	; (80003d4 <TIM_Config+0x7c>)
- 8000390:	2263      	movs	r2, #99	; 0x63
- 8000392:	60da      	str	r2, [r3, #12]
-	myTimerHandle.Init.Prescaler = 16000- 1;
- 8000394:	4b0f      	ldr	r3, [pc, #60]	; (80003d4 <TIM_Config+0x7c>)
- 8000396:	f643 627f 	movw	r2, #15999	; 0x3e7f
+ 8000390:	f643 627f 	movw	r2, #15999	; 0x3e7f
+ 8000394:	60da      	str	r2, [r3, #12]
+	myTimerHandle.Init.Prescaler = 100 - 1; // prescaler was 16000 before?
+ 8000396:	4b0f      	ldr	r3, [pc, #60]	; (80003d4 <TIM_Config+0x7c>)
+ 8000398:	2263      	movs	r2, #99	; 0x63
  800039a:	605a      	str	r2, [r3, #4]
 
 	//INIT

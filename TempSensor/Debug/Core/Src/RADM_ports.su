@@ -1,0 +1,10 @@
+RADM_ports.c:139:6:GpioInitialSetup	64	static
+RADM_ports.c:290:6:Usart2GpioSetup	32	static
+RADM_ports.c:343:6:Usart3GpioSetup	4	static
+RADM_ports.c:375:6:Uart4GpioSetup	32	static
+RADM_ports.c:418:6:Usart6GpioSetup	32	static
+RADM_ports.c:474:6:Tim3GpioSetup	32	static
+RADM_ports.c:498:6:Tim4GpioSetup	4	static
+RADM_ports.c:516:6:Spi1GpioSetup	4	static
+RADM_ports.c:566:6:Spi2GpioSetup	4	static
+RADM_ports.c:617:6:I2c1GpioSetup	4	static

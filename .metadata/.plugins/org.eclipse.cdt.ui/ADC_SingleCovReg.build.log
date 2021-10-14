@@ -1,4 +1,4 @@
-08:22:10 **** Incremental Build of configuration Debug for project ADC_SingleCovReg ****
+11:55:44 **** Build of configuration Debug for project ADC_SingleCovReg ****
 make -j4 all 
 arm-none-eabi-size   ADC_SingleCovReg.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   ADC_SingleCovReg.elf
 Finished building: default.size.stdout
  
 
-08:22:10 Build Finished. 0 errors, 0 warnings. (took 370ms)
+11:55:44 Build Finished. 0 errors, 0 warnings. (took 420ms)
 

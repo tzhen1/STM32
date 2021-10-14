@@ -146,6 +146,7 @@ void ConfigLEDpins(void)
  8000218:	4804      	ldr	r0, [pc, #16]	; (800022c <ConfigLEDpins+0x44>)
  800021a:	f000 f89d 	bl	8000358 <HAL_GPIO_Init>
 
+
 }
  800021e:	bf00      	nop
  8000220:	3718      	adds	r7, #24
