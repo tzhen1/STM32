@@ -924,7 +924,7 @@ unsigned int Loop;
 
 	for(Loop = 0; Loop < PacketLength; Loop++)
 	{
-		//waiting for byte on USART or timeout
+		/*waiting for byte on USART or timeout  */
 		Sleep10UsCounter  = 0;
 //		while(USART_GetFlagStatus(USARTx, UART_FLAG_RXNE) == RESET)
 		while(__HAL_UART_GET_FLAG(&USARTx,UART_FLAG_TC) == RESET)

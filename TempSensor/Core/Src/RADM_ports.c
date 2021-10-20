@@ -13,8 +13,6 @@
 //*--------------------------------------------------------------------------------------
 #include "stm32f4xx.h"
 #include "stm32_hal_legacy.h"
-//#include "stm32f4xx_gpio.h"
-//#include "stm32f4xx_rcc.h"
 #include "stm32f4xx_hal.h"
 #include "RADM_system.h"
 #include "RADM_ports.h"
