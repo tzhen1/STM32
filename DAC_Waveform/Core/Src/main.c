@@ -62,7 +62,9 @@ static void MX_TIM6_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+/* output DAC signal via DMA */
 const uint8_t myDACsignal[7] ={0,40,80,120,160,200,240}; //staircase signal wave, 7 data points to be output via DMA
+
 // then drops to 0 and resets as circular mode
 
 /* USER CODE END 0 */
